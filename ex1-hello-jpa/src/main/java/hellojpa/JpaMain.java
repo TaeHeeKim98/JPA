@@ -17,12 +17,11 @@ public class JpaMain {
 
             //영속
             Member member = em.find(Member.class, 150L);
-            member.setName("ZZZZZ");
+            member.setName("AAAAA");
 
-            //em.persist(member);
+            em.clear();
 
             System.out.println("=========================");
-
             tx.commit(); // 트랜젝션 커밋
         } catch (Exception e) {
             tx.rollback();

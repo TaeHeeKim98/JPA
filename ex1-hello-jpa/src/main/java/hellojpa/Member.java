@@ -10,9 +10,9 @@ public class Member {
 
     @Id
     private Long id;
-
+    @Column(unique = true, length = 10)
     private String name;
-
+    private int gogo;
     public Member(){
     }
     public Member(Long id, String name) {
